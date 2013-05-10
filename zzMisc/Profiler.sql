@@ -1,0 +1,1 @@
+﻿exec dbo.Dot_Member_PlaceBet @custid=807023,@ugroup=N'hka',@oddsid=1691318,@betteam=N'h',@hdp1=0.75,@hdp2=0,@odds=0.70999999999999996,@livehomescore=0,@liveawayscore=0,@stake=3,@HTTP_REF=N'1_3/27/2008@http://bet.12bet.com/BetProcess.aspx?match=1691318_h_1.710',@BET_IP=N'202.78.228.8',@site=N'12bet',@betfrom=N'd',@creator=default,@OriginalOdds=0.70999999999999996

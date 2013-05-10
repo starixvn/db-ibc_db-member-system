@@ -1,0 +1,76 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "Member"
+   MSDTVersion = "80"
+   SccProjectName = "SAK"
+   SccLocalPath = "SAK"
+   SccAuxPath = "SAK"
+   SccProvider = "SAK"
+   Begin Folder = "AutoBet"
+      Script = "dbo.Acc_Auto_BetInsertMixParlay.proc.sql"
+      Script = "dbo.Acc_Auto_BetInsertOther.proc.sql"
+      Script = "dbo.Acc_Auto_CustomerSelMember.proc.sql"
+      Script = "dbo.Acc_Auto_GetOddsInfoOthers.proc.sql"
+      Script = "dbo.Acc_Auto_GetOddsInfoOutright.function.sql"
+      Script = "dbo.Acc_Auto_GetOddsInfoParlay.proc.sql"
+      Script = "dbo.Acc_Auto_Max.function.sql"
+      Script = "dbo.Acc_Auto_Min.function.sql"
+      Script = "dbo.Acc_Auto_OddsSelOther.proc.sql"
+      Script = "dbo.Acc_Auto_OddsSelOutright.proc.sql"
+      Script = "dbo.Acc_Auto_OddsSelParlay.proc.sql"
+      Script = "dbo.Acc_Auto_OddsSelSportBettype.proc.sql"
+      Script = "dbo.Acc_Auto_Random.function.sql"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "204.bodb02.dbo"
+         ConnectStr = "Data Source=10.20.20.204;Initial Catalog=bodb02;User ID=sa"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+      Begin DBRefNode = "214.bodb02.dbo"
+         ConnectStr = "Data Source=10.20.20.214;Initial Catalog=bodb02;User ID=sa"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+   End
+   Begin Folder = "Event"
+      Script = "dbo.Dot_Admin_CheckEventDateParlay.sql"
+      Script = "dbo.Dot_Admin_UpdateEvent.sql"
+      Script = "dbo.Dot_Admin_UpdateWinlostDate.sql"
+      Script = "dbo.Dot_Admin_UpdateWinlostDateParlay.sql"
+   End
+   Begin Folder = "Login_OnUser"
+      Script = "dbo.DOT_Member_CheckIn.proc.sql"
+      Script = "dbo.DOT_Member_LoginClaimed.proc.sql"
+      Script = "dbo.DOT_Member_LoginRecord.proc.sql"
+      Script = "dbo.Dot_Member_LoginVerify.proc.sql"
+      Script = "dbo.LoadBalancerDomain_out.proc.sql"
+      Script = "dbo.UserLoginClaimed_out.proc.sql"
+      Script = "dbo.UserLoginRecord_out.proc.sql"
+      Script = "Notes.sql"
+   End
+   Begin Folder = "PlaceBet"
+      Script = "dbo.Dot_BetInsMixParlay.proc.sql"
+      Script = "dbo.Dot_Member_PlaceBet.proc.sql"
+      Script = "dbo.Dot_Member_PlaceBet_Simple_13_24_26_28.sql"
+      Script = "dbo.Dot_Member_PlaceBet_Simple_25_27.sql"
+      Script = "dbo.Dot_OddsUpdCS_AutoBookie.proc.sql"
+      Script = "dbo.Dot_OddsUpdFGLG_AutoBookie.proc.sql"
+      Script = "Dot_Member_Confirm3rd.proc.sql"
+      Script = "Dot_Member_Credit_Match_Check.sql"
+      Script = "Dot_Member_Credit_Match_Check_Thien.sql"
+      Script = "Dot_Member_PlaceBet_Simple_test.sql"
+      Script = "Dot_Member_PlaceBet3rd.proc.sql"
+      Begin Folder = "FGLG"
+      End
+   End
+   Begin Folder = "Scripts"
+   End
+   Begin Folder = "zzMisc"
+      Script = "dbo.Admin_Settlement_ParlayDetail.proc.sql"
+      Script = "dbo.Dot_Member_AutoBookie1.proc.sql"
+      Script = "dbo.Dot_Member_Custsetting.proc.sql"
+      Script = "dbo.Dot_PB_DelBet.sql"
+      Script = "dotnet_common_autobookie_all2_1.05.sql"
+      Script = "Profiler.sql"
+   End
+End
