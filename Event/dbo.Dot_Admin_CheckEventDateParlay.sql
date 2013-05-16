@@ -8,7 +8,7 @@ AS
 	Created by:Jamie 
 	Date: 20100728
 	Task: Check the max eventdate of match before updating 
-	DB: DBTXN.BODB02 
+	DB: DBTXN/BODB02 
 */
 BEGIN
 	SET NOCOUNT ON 
