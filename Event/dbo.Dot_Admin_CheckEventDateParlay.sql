@@ -8,7 +8,7 @@ AS
 	Created by:Jamie 
 	Date: 20100728
 	Task: Check the max eventdate of match before updating 
-	DB: DB02.BODB02 
+	DB: DBTXN.BODB02 
 */
 BEGIN
 	SET NOCOUNT ON 
@@ -51,7 +51,7 @@ BEGIN
 
 	SELECT	TOP 1 @BalanceUpDate = Winlostdate 
 	FROM	Bettrans WITH (NOLOCK) 
-	WHERE	Bettype = 100 AND MatchID = 0 AND custid = 3 
+	WHERE	Bettype = 20000 AND MatchID = 0 AND custid = 3 
 
 	-- BalanceUp Date -> Week 1 --> Week 2 ---> 
 	IF	@MinWinlostDate < DATEADD(DAY,7,@BalanceUpDate) --Week 1 

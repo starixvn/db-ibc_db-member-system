@@ -5,7 +5,7 @@ AS
 /*	Created by:Jamie
 	Date: 20100731
 	Task: Update the event date of Parlay tickets when the match's event date updated 
-	DB: DB02.BODB02
+	DB: DBTXN/BODB02
 */
 BEGIN
 	SET NOCOUNT ON
@@ -31,8 +31,8 @@ BEGIN
 			CASE WHEN winlostdate < @newEventdate THEN 1 ELSE 0 END 
 	FROM	bettrans b WITH (NOLOCK) 	
 			INNER JOIN @tmpRefno r ON b.refno = r.refno 
-	WHERE	b.bettype = 9 
-			AND b.matchid = 9 
+	WHERE	b.bettype  in (9,29) 
+			AND b.matchid  in (9,29) 
 			AND b.statusID = 0 
 
 	UPDATE	bettrans WITH (UPDLOCK,ROWLOCK)
